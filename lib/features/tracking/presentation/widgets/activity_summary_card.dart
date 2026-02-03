@@ -19,7 +19,7 @@ class ActivitySummaryCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Activity Summary',
+              'Group Overview',
               style: Theme.of(context).textTheme.titleMedium,
             ),
             const SizedBox(height: 12),
@@ -27,24 +27,31 @@ class ActivitySummaryCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 _SummaryMetric(
-                  label: 'Distance',
-                  value: '12.4 km',
-                  icon: Icons.route,
+                  label: 'Students',
+                  value: '18',
+                  icon: Icons.groups,
                   color: colorScheme.primary,
                 ),
                 _SummaryMetric(
-                  label: 'Duration',
-                  value: '1h 42m',
-                  icon: Icons.timer,
+                  label: 'Active Today',
+                  value: '12',
+                  icon: Icons.task_alt,
                   color: colorScheme.secondary,
                 ),
                 _SummaryMetric(
-                  label: 'Stops',
-                  value: '3',
-                  icon: Icons.place,
+                  label: 'Streak',
+                  value: '6 days',
+                  icon: Icons.local_fire_department,
                   color: colorScheme.tertiary,
                 ),
               ],
+            ),
+            const SizedBox(height: 16),
+            Text(
+              'Teacher: Ustadh Mariam · Group: Al-Fajr',
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                    color: Colors.black54,
+                  ),
             ),
           ],
         ),
