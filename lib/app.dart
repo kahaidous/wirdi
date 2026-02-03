@@ -9,7 +9,7 @@ class TrackingApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tracking App',
+      title: 'Wirdi',
       theme: AppTheme.lightTheme,
       home: const TrackingScreen(),
     );
